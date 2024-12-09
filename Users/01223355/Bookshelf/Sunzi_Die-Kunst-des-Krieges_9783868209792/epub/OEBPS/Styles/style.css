@@ -1,0 +1,160 @@
+/* Body */
+
+body  {display: block; text-indent: 0%; margin-top: 2%; margin-bottom: 2%; padding-left:30px; padding-right:30px;}
+
+/* Cover Page */
+
+div.cover_image{text-align: center; margin-top: 0em;}
+
+/* Title Page */
+.tit {display: block; text-indent: 0%; margin-top: 20%; margin-bottom: 0%; text-align: center; font-size: 180%; }
+.tit1 {display: block; text-indent: 0%; margin-top: 6%; margin-bottom: 0%; text-align: center; font-size: 150%; }
+.tit2 {display: block; text-indent: 0%; margin-top: 6%; margin-bottom: 0%; text-align: center; font-size: 90%; }
+.tit3  {display: block; text-indent: 0%; margin-top: 3%; margin-bottom: 0%; text-align: center; font-size: 90%; }
+
+
+/* Copyright Page */
+.copy  {display: block; margin-top: 30%; margin-bottom: 0%; text-indent:0%; text-align: justify; font-size: 80%; }
+.copy1  {display: block; margin-top: 2%; margin-bottom: 0%; text-indent:0%; text-align: justify; font-size: 80%; }
+.copy2  {display: block; margin-top: 0%; margin-bottom: 0%; text-indent:0%; text-align: justify; font-size: 80%; }
+
+/* Chapter Division */
+.chap-ttl  {display: block; text-indent: 0%; margin-top: 8%; margin-bottom: 5%; text-align: center; font-size: medium;}
+.chap-num {display: block; text-indent: 0%; margin-top: 10%; margin-bottom: 3%; text-align: center; font-size: medium;}
+.ct  {display: block; text-indent: 0%; margin-top: 6%; margin-bottom: 0em; text-align: center; font-size: 130%;}
+.ct1  {display: block; text-indent: 0%; margin-top: 2%; margin-bottom: 1em; text-align: center; font-size: 110%;}
+/* Chapter Headings */
+.h1{font-size: 100%; line-height: 130%; font-style: normal; margin-top: 1em; margin-bottom: 0; margin-left: 0.0em; text-indent: 0em; text-align: center;}
+.h1a{font-size: 110%; line-height: 130%; font-style: normal; text-indent: 0%; margin-top: 2em; margin-bottom: 0.5em; text-align: center;}
+.h1b{font-size: 110%; font-style: normal; font-weight: normal; margin-top: 0em; margin-bottom: 2m; margin-left: 0em; text-indent: 0em;}
+.h2{font-size: 100%; line-height: 130%; font-style: normal; margin-top: 16%; margin-bottom: 0em; text-indent: 0em; text-align: left;}
+.h2a{font-size: 100%; font-style: normal; margin-top: 2em; margin-bottom: 0em; text-indent: 0em; text-align: left;}
+.h3{font-size: 100%; font-style: normal; margin-top: 0em; margin-bottom: 0em; margin-left: 0em; text-indent: 0em; text-align: center;}
+
+h4.h4{font-size: 100%; font-style: normal; font-weight: normal; margin-top: 0em; margin-bottom: 0.5em;}
+h5.h5{font-size: 100%; font-style: normal; font-weight: normal; margin-top: 0em; margin-bottom: 0.5em;}
+h6.h6{font-size: 100%; font-style: normal; font-weight: normal; margin-top: 0em; margin-bottom: 0.5em;}
+
+
+/* Inhalt */
+.toc {display: block; font-size: 100%; margin-top: 2%; margin-bottom: 0%; text-align: left; text-indent:0%; font-weight:normal;}
+.toc1 {display: block; font-size: 100%; margin-top: 0em; margin-left: 0%; margin-bottom: 0%; text-indent:0%; text-align: left; }
+.toc2 {display: block; font-size: 100%; margin-top: 2em; margin-bottom: 0%; margin-left: 0%; text-indent:0%; font-weight:normal; }
+
+/* Chapter Text */
+.tx  {display: block; text-indent: 1em; margin-top: 0%; margin-bottom: 0%; text-align: justify; font-size: 100%; }
+.tx1  {display: block; text-indent: 0%; margin-top: 1em; margin-bottom: 0%; text-align: justify; font-size: 100%; }
+.tx2  {display: block; text-indent: 0%; margin-top: 2em; margin-bottom: 0%;text-align: justify; font-size: 100%; }
+.tx3  {display: block; text-indent: 1em; margin-top: 1em; margin-bottom: 0em;text-align: justify; font-size: 100%; }
+.tx4  {display: block; text-indent: 0em; margin-top: 0em; margin-bottom: 0%; text-align: justify; font-size: 100%; }
+.txr{display: block; font-size: 100%; text-align: center; margin-top: 0%; margin-bottom: 0%; margin-right: 0em;} 
+.txr1{display: block; font-size: 100%; text-align: right; margin-top: 1em; margin-bottom: 0%; margin-right: 3em;} 
+.txr2{display: block; font-size: 100%; text-align: right; margin-top: 0%; margin-bottom: 0%; margin-right: 3em;} 
+.tx5  {display: block; margin-left: 1em; margin-top: 0%; margin-bottom: 0%; text-align: justify; font-size: 100%; }
+.tx6  {display: block; margin-left: 1em; margin-top: 2em; margin-bottom: 0%; text-align: justify; font-size: 100%; }
+.tx7  {display: block; text-indent: 0%; margin-top: 0%; margin-bottom: 8%; text-align: justify; font-size: 100%; }
+.tx8  {display: block; margin-top: 20%; margin-bottom: 0%; text-align: justify; font-size: 100%; margin-right:5%; margin-left:5%; }
+.ser  {display: block; text-indent: 0%; text-align:center; margin-top:0%; margin-bottom:0%; font-size: 100%; }
+.ser1  {display: block; font-size: 100%; text-align: center; margin-top: 1em; margin-bottom: 0%; text-indent:0%; }
+.ser2  {display: block; font-size: 100%; text-align: center; margin-top: 2em; margin-bottom: 0%; text-indent:0%;}
+.ser3  {display: block; font-size: 100%; text-indent: 0%; text-align:center; margin-top:3em; margin-bottom:0%;}
+.ser4  {display: block; font-size: 100%; text-align: center; margin-top: 20%; margin-bottom: 0%; text-indent:0%;}
+
+.hang {display: block; text-indent: -1em; margin-top: 1em; margin-bottom: 0%; margin-right: 0em; margin-left: 1em; text-align: justify; font-size: 100%; }
+.hang1 {display: block; text-indent: -1em; margin-top: 0em; margin-bottom: 0%; margin-right: 0em; margin-left: 1em; text-align: justify; font-size: 100%; }
+.hang2 {display: block; text-indent: 0em; margin-top: 0em; margin-bottom: 0%; margin-right: 0em; margin-left: 1em; text-align: justify; font-size: 100%; }
+.hang3 {display: block; text-indent: 0%; margin-top: 2em; margin-bottom: 0%; margin-right: 0em; margin-left: 1em; text-align: justify; font-size: 100%; }
+.hang4 {display: block; text-indent: 0%; margin-top: 0em; margin-bottom: 0%; margin-right: 0em; margin-left: 2em; text-align: justify; font-size: 100%; }
+.hang5 {display: block; text-indent: 0%; margin-top: 0em; margin-bottom: 0%; margin-right: 0em; margin-left: 3em; text-align: justify; font-size: 100%; }
+/* Image */
+
+img{vertical-align: top;}
+
+div.image_left{text-align: left; margin-top: 1em; margin-bottom: 0em;}
+div.image_right{text-align: right; margin-top: 1em; margin-bottom: 0em;}
+div.image_center{text-align: center; margin-top: 0em; margin-bottom: 0em;}
+
+p.caption_left{font-size: 80%; line-height: 100%; text-align: left; margin-top: 0.5em;}
+p.caption_right{font-size: 70%; line-height: 100%; text-align: right; margin: 0em;}
+p.tion_center{font-size: 70%; line-height: 100%; text-align: center; margin: 0em;}
+
+sup{font-size: 75%; line-height: 0%; vertical-align: text-top;}
+
+/* Footnote */
+
+.fn1{
+	font-size: 90%; text-align: justify; margin-top: 2em; margin-bottom: 0em; margin-left: 1em; margin-right: 1em; text-indent: -1em;}
+.fn{
+	font-size: 90%; text-align: justify; margin-top: 1%em; margin-bottom: 0em; margin-left: 1em; margin-right: 1em; text-indent: -1em;}
+
+/* Extra */
+.italic{font-family: verdanai; font-style: italic;}
+.bold{font-family: verdanab; font-weight: bold;}
+.underline{text-decoration: underline; width:2px solid;}
+.linethrough{text-decoration: line-through;}
+.sans-serif{font-family: sans-serif;}
+.grey{color: #707070;}
+.emspace{padding-left: 3%;}
+.top-space{padding-top: 5%;}
+.line-space{margin-top: 1.3em;}
+.line-space-imp{margin-top: 0em;}
+.list{padding-left: 2%;}
+.border {border-bottom: 2px solid; padding: 2px;}
+
+
+div.blockquote {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  padding-left: 15px;
+  } 
+
+
+p.newpage
+{page-break-before: always;}
+
+
+/*Table*/
+
+table{padding: 3; margin-top:1.5%; margin-bottom:1.5%; border: 1px solid black;}
+td{text-align: left; border: 1px solid black;}
+tr{text-align: left; border: 1px solid black;}
+
+div.center
+
+{text-align: center;}
+
+.style1
+{
+background-color:#BDBDBD;
+padding: 5px;
+}
+
+.style2
+{
+background-color:#E6E6E6;
+padding: 5px;
+}
+
+.style3
+{
+background-color:#DCDCDE;
+padding: 5px;
+}
+
+
+.pagestart {
+
+color:#666666;
+cursor:pointer;
+font-size:7pt;
+line-height: 7pt;
+font-weight:normal;
+font-style:normal;
+
+font-family: sans-serif;
+padding-left:-0.1em;
+padding-right:0.3em;}
+
+
+
