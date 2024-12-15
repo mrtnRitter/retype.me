@@ -20,7 +20,7 @@ user_root = "Users/01223355/"
 
 # ------------------- FUNCTIONS -------------------#
 
-def store_file(e: events.UploadEventArguments):
+def process_ebook(e: events.UploadEventArguments):
     f = Path(e.name)    
     b = Path(user_root, "Bookshelf", f.with_suffix(""))
     if not b.exists():
@@ -31,7 +31,7 @@ def store_file(e: events.UploadEventArguments):
     with open (newbook.path, "wb") as file:
         file.write(e.content.read())
     
-    newbook.unzip()
+    newbook.parse()
     
 
 
@@ -49,7 +49,7 @@ def store_file(e: events.UploadEventArguments):
 # ----------------------- UI -----------------------#
 
 
-ui.upload(auto_upload=True, max_files=1, label="Upload ePub File", on_upload=store_file).props("accept=.epub").classes("max-w-full")
+ui.upload(auto_upload=True, max_files=1, label="Upload ePub File", on_upload=process_ebook).props("accept=.epub").classes("max-w-full")
 
 
 

@@ -1,8 +1,8 @@
 # ------------------- IMPORTS -------------------#
 from zipfile import ZipFile
 from pathlib import Path
-
-
+import os
+from bs4 import BeautifulSoup
 
 # ------------------- GLOBALS -------------------#
 
@@ -16,11 +16,17 @@ from pathlib import Path
 class ebook:
     def __init__(self, path):
         self.path = path
+        self.ncx = None
+        self.autor = None
+        self.title = None
+        self.totalpages = None
+        self.playorder = []
+
 
     def __str__(self):
         pass
 
-    def unzip(self):
+    def parse(self):
         p = Path(self.path).parent
         z = p.joinpath("epub")
 
@@ -30,33 +36,29 @@ class ebook:
         with ZipFile(self.path, "r") as zip:
             zip.extractall(z)
 
-    def parse():
-        pass
+        for r, d, f in os.walk(z):
+            for file in f:
+                if file.endswith(".ncx"):
+                    self.ncx = Path(r).joinpath(file)
+                    break
+
+        with open (self.ncx, "r", encoding="utf-8") as f:
+            toc = BeautifulSoup(f.read(), "xml")
+
+        self.autor = toc.find("docAuthor").find("text").text
+        self.title = toc.find("docTitle").find("text").text
+        self.totalpages = toc.find("meta", {"name" : "dtb:totalPageCount"}).get("content")
+        
+        for c in toc.findAll("navPoint"):
+            url = c.find("content").get("src").split("#")[0]
+            if not url in self.playorder:
+                self.playorder.append(url)
+        
+    
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# open content file from tmp path
-
-
-
-
-# index files and read text htmls in chapter order
 
 
 
