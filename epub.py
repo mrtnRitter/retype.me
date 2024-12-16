@@ -17,10 +17,11 @@ class ebook:
     def __init__(self, path):
         self.path = path
         self.ncx = None
+        self.html_root = None
         self.autor = None
         self.title = None
         self.totalpages = None
-        self.playorder = []
+        self.chapters = []
 
 
     def __str__(self):
@@ -40,6 +41,7 @@ class ebook:
             for file in f:
                 if file.endswith(".ncx"):
                     self.ncx = Path(r).joinpath(file)
+                    self.html_root = self.ncx.parent
                     break
 
         with open (self.ncx, "r", encoding="utf-8") as f:
@@ -50,9 +52,9 @@ class ebook:
         self.totalpages = toc.find("meta", {"name" : "dtb:totalPageCount"}).get("content")
         
         for c in toc.findAll("navPoint"):
-            url = c.find("content").get("src").split("#")[0]
-            if not url in self.playorder:
-                self.playorder.append(url)
+            chapter = self.html_root.joinpath(c.find("content").get("src").split("#")[0])
+            if not chapter in self.chapters:
+                self.chapters.append(chapter)
         
     
 
@@ -80,24 +82,3 @@ class ebook:
 
 
 
-# book = epub.read_epub(path)
-
-# #print (book.get_metadata("DC", "title"))
-# #print (book.get_metadata("DC", "creator"))
-
-
-# texts = book.get_items_of_type(ebooklib.ITEM_DOCUMENT)
-# images = book.get_items_of_type(ebooklib.ITEM_IMAGE)
-
-# #for image in images:
-#     #print(image.get_content())
-
-
-# for i, text in enumerate(texts):  
-#     if i == 5:
-#         html_page = text.get_content().decode("utf8")
-
-
-# raw_text = BeautifulSoup(html_page, features="html.parser").get_text()
-
-# print (html_page)

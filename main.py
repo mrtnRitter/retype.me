@@ -32,7 +32,14 @@ def process_ebook(e: events.UploadEventArguments):
         file.write(e.content.read())
     
     newbook.parse()
+
     
+
+    for chapter in newbook.chapters:
+        with ui.card().props("flat bordered"):
+            with open (chapter, "r", encoding="utf-8") as h:
+                ui.html(h.read())
+
 
 
 
@@ -48,10 +55,12 @@ def process_ebook(e: events.UploadEventArguments):
 
 # ----------------------- UI -----------------------#
 
+with ui.card().props("flat bordered"):
+    ui.upload(auto_upload=True, max_files=1, label="Upload ePub File", on_upload=process_ebook).props("accept=.epub").classes("max-w-full")
 
-ui.upload(auto_upload=True, max_files=1, label="Upload ePub File", on_upload=process_ebook).props("accept=.epub").classes("max-w-full")
 
 
+    
 
 
 
